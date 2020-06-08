@@ -4,6 +4,10 @@
 2. If a Player rolls 1 then his round score is nullified.
 3. First player to reach 100 wins the game.
 
+
+#New Change:
+
+If you want advance version of the game just change the script to challenge.js
 ##This is a coursework project
 
 [Udemy Javascript Course](https://www.udemy.com/course/the-complete-javascript-course/) 

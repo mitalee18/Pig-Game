@@ -10,8 +10,8 @@ Change the game to follow these rules:
 var scores, roundScore, activePlayer, gamePlaying, temp_1, temp_2, finalScore, winningScore;
 
 init();
-//Anonymous function - one time use function -- view hoisting
-//Creating event listener for btn-roll for click, and adding function
+
+alert('Game Rules \n - The game has 2 players, playing in rounds \n - In each turn, a player rolls two dice as many times as he wishes. Each result get added to his ROUND score\n -The players can decide the winning score at start or even during the game\n- BUT, if the player rolls a 1, all his ROUND score gets lost and player looses his ENTIRE score when he rolls two 6 in a row. After that, it\'s the next player\'s turn\n - The player can choose to \'Hold\', which means that his ROUND score gets added to his GLOBAL score. After that, it\'s the next player\'s turn\n - The first player to reach winning points on GLOBAL score wins the game');
 document.querySelector('.btn-roll').addEventListener('click',function()
 {
 	if(gamePlaying)
@@ -22,13 +22,13 @@ document.querySelector('.btn-roll').addEventListener('click',function()
 
 
 	//2. Display the result of dice
-	var diceDOM_1 = document.getElementById('dice-1'); //store your selected element in a varaiable
+	var diceDOM_1 = document.getElementById('dice-1'); 
 	diceDOM_1.style.display = 'block';
-	diceDOM_1.src = 'dice-' + dice_1 + '.png'; //take the HTML attribute of img tag as it is. 
+	diceDOM_1.src = 'dice-' + dice_1 + '.png'; 
 
-	var diceDOM_2 = document.getElementById('dice-2'); //store your selected element in a varaiable
+	var diceDOM_2 = document.getElementById('dice-2');
 	diceDOM_2.style.display = 'block';
-	diceDOM_2.src = 'dice-' + dice_2 + '.png'; //take the HTML attribute of img tag as it is. 
+	diceDOM_2.src = 'dice-' + dice_2 + '.png'; 
 
 	//3. Update the roundScore, If rolled number was NOT 1
 	if (dice_1 === 1 || dice_2 === 1)
