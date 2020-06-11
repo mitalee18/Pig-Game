@@ -8,7 +8,3 @@
 # New Change:
 
 If you want advance version of the game just change the script to challenge.js
-
-## This is a coursework project
-
-[Udemy Javascript Course](https://www.udemy.com/course/the-complete-javascript-course/) 
